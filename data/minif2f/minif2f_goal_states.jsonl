@@ -1,0 +1,244 @@
+{"statement_idx": 0, "goal_state": "b h v : ℝ\nh₀ : 0 < b ∧ 0 < h ∧ 0 < v\nh₁ : v = 1 / 3 * (b * h)\nh₂ : b = 30\nh₃ : h = 13 / 2\n⊢ v = 65"}
+{"statement_idx": 1, "goal_state": "x y : ℤ\n⊢ 4 * x ^ 3 - 7 * y ^ 3 ≠ 2003"}
+{"statement_idx": 2, "goal_state": "x y z w : ℕ\nht : 1 < x ∧ 1 < y ∧ 1 < z\nhw : 0 ≤ w\nh0 : Real.log ↑w / Real.log ↑x = 24\nh1 : Real.log ↑w / Real.log ↑y = 40\nh2 : Real.log ↑w / Real.log (↑x * ↑y * ↑z) = 12\n⊢ Real.log ↑w / Real.log ↑z = 60"}
+{"statement_idx": 3, "goal_state": "⊢ {x ∈ Finset.range 10000 | ¬Even x}.prod id = 10000! / (2 ^ 5000 * 5000!)"}
+{"statement_idx": 4, "goal_state": "a b : ℝ\nh₁ : a * b = 180\nh₂ : 2 * (a + b) = 54\n⊢ a ^ 2 + b ^ 2 = 369"}
+{"statement_idx": 5, "goal_state": "⊢ (∑ x ∈ Finset.range 10, (x + 1) ^ 2) % 10 = 5"}
+{"statement_idx": 6, "goal_state": "m n : ℝ\nk : ℕ\na : ℕ → ℝ\ny : ℝ → ℝ\nh₀ : 0 < k\nh₁ : ∀ (x : ℝ), y x = ∑ i ∈ Finset.range k, cos (a i + x) / 2 ^ i\nh₂ : y m = 0\nh₃ : y n = 0\n⊢ ∃ t, m - n = ↑t * π"}
+{"statement_idx": 7, "goal_state": "s t : ℝ\nh₀ : s = 9 - 2 * t\nh₁ : t = 3 * s + 1\n⊢ s = 1 ∧ t = 4"}
+{"statement_idx": 8, "goal_state": "σ : ℝ ≃ ℝ\nh₀ : σ.invFun 2 = 10\nh₁ : σ.invFun 10 = 1\nh₂ : σ.invFun 1 = 2\n⊢ σ.toFun (σ.toFun 10) = 1"}
+{"statement_idx": 9, "goal_state": "n : ℕ\nh₀ : n ≤ 9\nh₁ : 18 ∣ 374 * 10 + n\n⊢ n = 4"}
+{"statement_idx": 10, "goal_state": "a b c : ℝ\nh₀ : 0 < a ∧ 0 < b ∧ 0 < c\nh₁ : c < a + b\nh₂ : b < a + c\nh₃ : a < b + c\n⊢ 0 ≤ a ^ 2 * b * (a - b) + b ^ 2 * c * (b - c) + c ^ 2 * a * (c - a)"}
+{"statement_idx": 11, "goal_state": "⊢ (∑ k ∈ Finset.range 101, k) % 6 = 4"}
+{"statement_idx": 12, "goal_state": "x y z : ℝ\nh₀ : x ≠ 0\nh₁ : 2 * x = 5 * y\nh₂ : 7 * y = 10 * z\n⊢ z / x = 7 / 25"}
+{"statement_idx": 13, "goal_state": "x : ℝ\nh₀ : 2 + 1 / (1 + 1 / (2 + 2 / (3 + x))) = 144 / 53\n⊢ x = 3 / 4"}
+{"statement_idx": 14, "goal_state": "⊢ 1 * 3 * 5 * 7 * 9 * 11 * 13 % 10 = 5"}
+{"statement_idx": 15, "goal_state": "⊢ (100 ^ 2 - 7 ^ 2) / (70 ^ 2 - 11 ^ 2) * ((70 - 11) * (70 + 11) / ((100 - 7) * (100 + 7))) = 1"}
+{"statement_idx": 16, "goal_state": "a b : ℝ\nh₀ : a ^ 2 + b ^ 2 = 1\n⊢ a * b + |a - b| ≤ 1"}
+{"statement_idx": 17, "goal_state": "f : ℕ → ℕ\nh₀ : ∀ (n : ℕ), 0 < f n\nh₁ : ∀ (n : ℕ), 0 < n → f (f n) < f (n + 1)\n⊢ ∀ (n : ℕ), 0 < n → f n = n"}
+{"statement_idx": 18, "goal_state": "a b : ℝ\nh₀ : a = -1\nh₁ : b = 5\n⊢ -a - b ^ 2 + 3 * (a * b) = -39"}
+{"statement_idx": 19, "goal_state": "n : ℕ\nh₀ : 0 < n\nh₁ : logb 2 (logb 16 ↑n) = logb 4 (logb 4 ↑n)\n⊢ (digits 10 n).sum = 13"}
+{"statement_idx": 20, "goal_state": "x : ℝ\nh₀ : 0 ≤ 1 + 2 * x\nh₁ : (1 - √(1 + 2 * x)) ^ 2 ≠ 0\nh₂ : 4 * x ^ 2 / (1 - √(1 + 2 * x)) ^ 2 < 2 * x + 9\nh₃ : x ≠ 0\n⊢ -(1 / 2) ≤ x ∧ x < 45 / 8"}
+{"statement_idx": 21, "goal_state": "a : ℕ\nh₀ : a = ∑ k ∈ divisors 500, k\n⊢ ∑ k ∈ {x ∈ a.divisors | Nat.Prime x}, k = 25"}
+{"statement_idx": 22, "goal_state": "x y : ℤ\n⊢ x ^ 5 ≠ y ^ 2 + 4"}
+{"statement_idx": 23, "goal_state": "a b c : ℝ\nh₀ : 0 < a ∧ 0 < b ∧ 0 < c\nh₁ : 9 * b = 20 * c\nh₂ : 7 * a = 4 * b\n⊢ 63 * a = 80 * c"}
+{"statement_idx": 24, "goal_state": "⊢ cos (π / 7) - cos (2 * π / 7) + cos (3 * π / 7) = 1 / 2"}
+{"statement_idx": 25, "goal_state": "a b c : ℕ\nh₀ : 1 ≤ a ∧ a ≤ 9\nh₁ : 1 ≤ b ∧ b ≤ 9\nh₂ : 1 ≤ c ∧ c ≤ 9\nh₃ : a ≠ b\nh₄ : a ≠ c\nh₅ : b ≠ c\nh₆ : a + b = c\nh₇ : 10 * a + a - b = 2 * c\nh₈ : c * b = 10 * a + a + a\n⊢ a + b + c = 8"}
+{"statement_idx": 26, "goal_state": "a b c d : ℚ\nh₀ : 3 * a = b + c + d\nh₁ : 4 * b = a + c + d\nh₂ : 2 * c = a + b + d\nh₃ : 8 * a + 10 * b + 6 * c = 24\n⊢ ↑d.den + d.num = 28"}
+{"statement_idx": 27, "goal_state": "n : ℕ\n⊢ 12 ∣ 4 ^ (n + 1) + 20"}
+{"statement_idx": 28, "goal_state": "x : ℝ\na b c : ℕ\nh₀ : 0 < a ∧ 0 < b ∧ 0 < c ∧ 0 ≤ x\nh₁ : 2 * x ^ 2 = 4 * x + 9\nh₂ : x = (↑a + √↑b) / ↑c\nh₃ : c = 2\n⊢ a + b + c = 26"}
+{"statement_idx": 29, "goal_state": "x : ℕ\nh₀ : ↑x + 4 / 100 * ↑x = 598\n⊢ x = 575"}
+{"statement_idx": 30, "goal_state": "x y : ℕ\nh₀ : 0 < x ∧ 0 < y\nh₁ : x ^ y ^ 2 = y ^ x\n⊢ (x, y) = (1, 1) ∨ (x, y) = (16, 2) ∨ (x, y) = (27, 3)"}
+{"statement_idx": 31, "goal_state": "m n : ℕ\nh₀ : m.gcd n = 6\nh₁ : m.lcm n = 126\n⊢ 60 ≤ m + n"}
+{"statement_idx": 32, "goal_state": "x y : ℕ\nh₀ : x % 3 = 2\nh₁ : y % 5 = 4\nh₂ : x % 10 = y % 10\n⊢ 14 ≤ x"}
+{"statement_idx": 33, "goal_state": "n x : ℝ\nh₀ : n + x = 97\nh₁ : n + 5 * x = 265\n⊢ n + 2 * x = 139"}
+{"statement_idx": 34, "goal_state": "x : ℝ\nh₀ : x / 50 = 40\n⊢ x = 2000"}
+{"statement_idx": 35, "goal_state": "x : ℝ\n⊢ (x + 1) ^ 2 * x = x ^ 3 + 2 * x ^ 2 + x"}
+{"statement_idx": 36, "goal_state": "n : ℕ\nh₀ : 3 ≤ n\n⊢ n ! < n ^ (n - 1)"}
+{"statement_idx": 37, "goal_state": "⊢ √1000000 - 1000000 ^ (1 / 3) = 900"}
+{"statement_idx": 38, "goal_state": "s : ℕ\nh₀ : s = ∑ k ∈ Finset.Icc 2010 4018, k\n⊢ s % 2009 = 0"}
+{"statement_idx": 39, "goal_state": "⊢ ¬∀ (a b : ℤ), (∃ i j, a = 2 * i ∧ b = 2 * j) ↔ ∃ k, a ^ 2 + b ^ 2 = 8 * k"}
+{"statement_idx": 40, "goal_state": "x y : ℝ\nf g : ℝ → ℝ\nh₀ : ∀ (t : ℝ), f t = t ^ 4\nh₁ : ∀ (t : ℝ), g t = 5 * t ^ 2 - 6\nh₂ : f x = g x\nh₃ : f y = g y\nh₄ : x ^ 2 < y ^ 2\n⊢ y ^ 2 - x ^ 2 = 1"}
+{"statement_idx": 41, "goal_state": "⊢ {x ∈ Finset.Icc 15 85 | 20 ∣ x}.card = 4"}
+{"statement_idx": 42, "goal_state": "⊢ (2000 + 2001 + 2002 + 2003 + 2004 + 2005 + 2006) % 7 = 0"}
+{"statement_idx": 43, "goal_state": "⊢ ∑ k ∈ {x ∈ Finset.Icc 1 49 | 3 ∣ x}, k % 10 = 78"}
+{"statement_idx": 44, "goal_state": "⊢ 5 ^ 999999 % 7 = 6"}
+{"statement_idx": 45, "goal_state": "S : Finset ℕ\nh₀ : ∀ (n : ℕ), n ∈ S ↔ 2010 ≤ n ∧ n ≤ 2019 ∧ ∃ m, m.divisors.card = 4 ∧ ∑ p ∈ m.divisors, p = n\n⊢ ∑ k ∈ S, k = 2016"}
+{"statement_idx": 46, "goal_state": "a : ℝ\nh₀ : 0 < a\nh₁ : 1 / a - ↑⌊1 / a⌋ = a ^ 2 - ↑⌊a ^ 2⌋\nh₂ : 2 < a ^ 2\nh₃ : a ^ 2 < 3\n⊢ a ^ 12 - 144 * (1 / a) = 233"}
+{"statement_idx": 47, "goal_state": "a : ℝ\n⊢ a * (2 - a) ≤ 1"}
+{"statement_idx": 48, "goal_state": "a b c : ℚ\nm n : ℝ\nh₀ : 0 < m ∧ 0 < n\nh₁ : m ^ 3 = 2\nh₂ : n ^ 3 = 4\nh₃ : ↑a + ↑b * m + ↑c * n = 0\n⊢ a = 0 ∧ b = 0 ∧ c = 0"}
+{"statement_idx": 49, "goal_state": "f : ℝ → ℝ\nh₀ : ∀ (x : ℝ), f x = 5 * x + 4\n⊢ f 1 = 9"}
+{"statement_idx": 50, "goal_state": "x y n : ℕ+\nh₀ : ↑↑x / 4 + ↑↑y / 6 = (↑↑x + ↑↑y) / ↑↑n\n⊢ n = 5"}
+{"statement_idx": 51, "goal_state": "σ : ℝ ≃ ℝ\nh : σ.toFun 2 = σ.invFun 2\n⊢ σ.toFun (σ.toFun 2) = 2"}
+{"statement_idx": 52, "goal_state": "x : ℤ\nh₀ : x < 0\nh₁ : 24 * x % 1199 = 15\n⊢ x ≤ -449"}
+{"statement_idx": 53, "goal_state": "n : ℕ\nh₀ : 0 < n\n⊢ (21 * n + 4).gcd (14 * n + 3) = 1"}
+{"statement_idx": 54, "goal_state": "⊢ 2 ^ 2010 % 10 = 4"}
+{"statement_idx": 55, "goal_state": "m n : ℕ\nf : ℕ → ℕ\nh₀ : ∀ (x : ℕ), f x = 4 ^ x + 6 ^ x + 9 ^ x\nh₁ : 0 < m ∧ 0 < n\nh₂ : m ≤ n\n⊢ f (2 ^ m) ∣ f (2 ^ n)"}
+{"statement_idx": 56, "goal_state": "p q r : ℤ\nh₀ : 1 < p ∧ p < q ∧ q < r\nh₁ : (p - 1) * (q - 1) * (r - 1) ∣ p * q * r - 1\n⊢ (p, q, r) = (2, 4, 8) ∨ (p, q, r) = (3, 5, 15)"}
+{"statement_idx": 57, "goal_state": "f : ℕ → ℕ\nh₀ : ∀ (m n : ℕ), 0 < m ∧ 0 < n → f (m + n) - f m - f n = 0 ∨ f (m + n) - f m - f n = 1\nh₁ : f 2 = 0\nh₂ : 0 < f 3\nh₃ : f 9999 = 3333\n⊢ f 1982 = 660"}
+{"statement_idx": 58, "goal_state": "x y : ℤ\nh₀ : y ^ 2 + 3 * (x ^ 2 * y ^ 2) = 30 * x ^ 2 + 517\n⊢ 3 * (x ^ 2 * y ^ 2) = 588"}
+{"statement_idx": 59, "goal_state": "f g : ℝ → ℝ\nh₀ : ∀ (x : ℝ), f x = 2 * x - 3\nh₁ : ∀ (x : ℝ), g x = x + 1\n⊢ g (f 5 - 1) = 7"}
+{"statement_idx": 60, "goal_state": "a b c d : ℝ\nh₀ : b = a ^ 2\nh₁ : a + b = 1\nh₂ : d = c ^ 2\nh₃ : c + d = 1\nh₄ : a ≠ c\n⊢ √((a - c) ^ 2 + (b - d) ^ 2) = √10"}
+{"statement_idx": 61, "goal_state": "⊢ (29 ^ 13 - 5 ^ 13) % 7 = 3"}
+{"statement_idx": 62, "goal_state": "a b : NNReal\nh₀ : 0 < a ∧ 0 < b\nh₁ : a ^ 2 = 6 * b\nh₂ : a ^ 2 = 54 / b\n⊢ a = 3 * NNReal.sqrt 2"}
+{"statement_idx": 63, "goal_state": "f g h : ℕ+ → ℕ\nh₀ : ∀ (x : ℕ+), f x = 12 * ↑x + 7\nh₁ : ∀ (x : ℕ+), g x = 5 * ↑x + 2\nh₂ : ∀ (x : ℕ+), h x = (f x).gcd (g x)\nh₃ : Fintype ↑(Set.range h)\n⊢ ∑ k ∈ (Set.range h).toFinset, k = 12"}
+{"statement_idx": 64, "goal_state": "⊢ Real.log 80 / Real.log 2 / (Real.log 2 / Real.log 40) - Real.log 160 / Real.log 2 / (Real.log 2 / Real.log 20) = 2"}
+{"statement_idx": 65, "goal_state": "x : ℤ\nf : ℤ → ℤ\nh0 : f x + f (x - 1) = x ^ 2\nh1 : f 19 = 94\n⊢ f 94 % 1000 = 561"}
+{"statement_idx": 66, "goal_state": "S : Finset ℝ\nh₀ : ∀ (x : ℝ), x ∈ S ↔ (x + 3) ^ 2 = 121\n⊢ ∑ k ∈ S, k = -6"}
+{"statement_idx": 67, "goal_state": "n : ℕ\nh₀ : n ≤ 9\nh₁ : 11 ∣ 20 * 100 + 10 * n + 7\n⊢ n = 5"}
+{"statement_idx": 68, "goal_state": "⊢ (129 ^ 34 + 96 ^ 38) % 11 = 9"}
+{"statement_idx": 69, "goal_state": "a : ℕ → ℝ\nh₀ : ∀ (n : ℕ), a (n + 2) - a (n + 1) = a (n + 1) - a n\nh₁ : a 1 = 2 / 3\nh₂ : a 9 = 4 / 5\n⊢ a 5 = 11 / 15"}
+{"statement_idx": 70, "goal_state": "n : ℕ\nh₀ : 10 ≤ n\nh₁ : ∃ x, x ^ 2 = n\nh₂ : ∃ t, t ^ 3 = n\n⊢ 64 ≤ n"}
+{"statement_idx": 71, "goal_state": "⊢ 8 * 9 ^ 2 + 5 * 9 + 2 = 695"}
+{"statement_idx": 72, "goal_state": "⊢ 54 % 6 = 0"}
+{"statement_idx": 73, "goal_state": "a : ℕ → ℕ\nh₀ : a 1 = 1\nh₁ : a 2 = 1\nh₂ : ∀ (n : ℕ), a (n + 2) = a (n + 1) + a n\n⊢ a 100 % 4 = 3"}
+{"statement_idx": 74, "goal_state": "S : Finset ℕ\nh₀ : ∀ (n : ℕ), n ∈ S ↔ 0 < n ∧ (↑n + 1000) / 70 = ↑⌊√↑n⌋\n⊢ S.card = 6"}
+{"statement_idx": 75, "goal_state": "A M C : ℕ\nh₀ : A ≤ 9 ∧ M ≤ 9 ∧ C ≤ 9\nh₁ : ofDigits 10 [0, 1, C, M, A] + ofDigits 10 [2, 1, C, M, A] = 123422\n⊢ A + M + C = 14"}
+{"statement_idx": 76, "goal_state": "a b : ℕ\nh₀ : 0 < a ∧ 0 < b\nh₁ : a % 10 = 2\nh₂ : b % 10 = 4\nh₃ : a.gcd b = 6\n⊢ 108 ≤ a.lcm b"}
+{"statement_idx": 77, "goal_state": "⊢ |(3491 - 60) * (3491 + 60) - 3491 ^ 2| = 3600"}
+{"statement_idx": 78, "goal_state": "a b c : ℝ\nh₀ : 0 < a ∧ 0 < b ∧ 0 < c\nh₁ : 3 ≤ a * b + b * c + c * a\n⊢ 3 / √2 ≤ a / √(a + b) + b / √(b + c) + c / √(c + a)"}
+{"statement_idx": 79, "goal_state": "f z : ℂ\nh₀ : f + 3 * z = 11\nh₁ : 3 * (f - 1) - 5 * z = -68\n⊢ f = -10 ∧ z = 7"}
+{"statement_idx": 80, "goal_state": "n : ℕ\nh₀ : 3 * n % 11 = 2\n⊢ n % 11 = 8"}
+{"statement_idx": 81, "goal_state": "n : ℕ\nh₀ : 0 < n\n⊢ ∏ k ∈ Finset.Icc 1 n, (1 + 1 / 2 ^ k) < 5 / 2"}
+{"statement_idx": 82, "goal_state": "x y : ℝ\nh₀ : x ^ 2 + 8 * x + y ^ 2 - 6 * y = 0\n⊢ (x + 4) ^ 2 + (y - 3) ^ 2 = 5 ^ 2"}
+{"statement_idx": 83, "goal_state": "n : ℕ\nh₀ : 0 < n\nh₁ : Nat.Prime (2 ^ n - 1)\n⊢ Nat.Prime n"}
+{"statement_idx": 84, "goal_state": "x y : ℝ\nh₀ : x + y = 25\nh₁ : x - y = 11\n⊢ x = 18"}
+{"statement_idx": 85, "goal_state": "⊢ (2 ^ 2014 + 2 ^ 2012) / (2 ^ 2014 - 2 ^ 2012) = 5 / 3"}
+{"statement_idx": 86, "goal_state": "n : ℕ\nh₀ : Even n\nh₁ : (↑n - 2) ^ 2 + ↑n ^ 2 + (↑n + 2) ^ 2 = 12296\n⊢ (n - 2) * n * (n + 2) / 8 = 32736"}
+{"statement_idx": 87, "goal_state": "r n : ℕ\nh₀ : r = 1342 % 13\nh₁ : 0 < n\nh₂ : 1342 ∣ n\nh₃ : n % 13 < r\n⊢ 6710 ≤ n"}
+{"statement_idx": 88, "goal_state": "n : ℕ\nh₀ : 0 < n\n⊢ ∏ k ∈ Finset.Icc 1 n, (1 + 1 / ↑k ^ 3) ≤ 3 - 1 / ↑n"}
+{"statement_idx": 89, "goal_state": "⊢ (∏ k ∈ Finset.range 6, (2 * k + 1)) % 10 = 5"}
+{"statement_idx": 90, "goal_state": "a b : ℝ\nh₀ : 2 ^ a = 32\nh₁ : a ^ b = 125\n⊢ b ^ a = 243"}
+{"statement_idx": 91, "goal_state": "a b c : ℕ\nh₀ : 0 < a ∧ 0 < b ∧ 0 < c\nh₁ : b = a + 1\nh₂ : c = b + 1\nh₃ : a * b * c = 8 * (a + b + c)\n⊢ a ^ 2 + (b ^ 2 + c ^ 2) = 77"}
+{"statement_idx": 92, "goal_state": "x : ℝ\nh₀ : x ≠ -1\nh₁ : (x - 9) / (x + 1) = 2\n⊢ x = -11"}
+{"statement_idx": 93, "goal_state": "n : ℕ\nh₀ : 0 < n\nh₁ : 80325 ∣ n !\n⊢ 17 ≤ n"}
+{"statement_idx": 94, "goal_state": "a m c : ℕ\nh₀ : a + m + c = 12\n⊢ a * m * c + a * m + m * c + a * c ≤ 112"}
+{"statement_idx": 95, "goal_state": "n A B C : ℕ\nh₀ : n = 3 ^ 17 + 3 ^ 10\nh₁ : 11 ∣ n + 1\nh₂ : List.Pairwise (fun x1 x2 => x1 ≠ x2) [A, B, C]\nh₃ : {A, B, C} ⊂ Finset.Icc 0 9\nh₄ : Odd A ∧ Odd C\nh₅ : ¬3 ∣ B\nh₆ : digits 10 n = [B, A, B, C, C, A, C, B, A]\n⊢ 100 * A + 10 * B + C = 129"}
+{"statement_idx": 96, "goal_state": "x : ℝ\nh : (11 ^ (1 / 4)) ^ (3 * x - 3) = 1 / 5\n⊢ (11 ^ (1 / 4)) ^ (6 * x + 2) = 121 / 25"}
+{"statement_idx": 97, "goal_state": "x y z : ℝ\nh₀ : 3 * x + 4 * y - 12 * z = 10\nh₁ : -2 * x - 3 * y + 9 * z = -4\n⊢ x = 14"}
+{"statement_idx": 98, "goal_state": "a : ℕ → ℕ\nh₀ : a 0 ^ 3 = 1\nh₁ : a 1 ^ 3 = 8\nh₂ : a 2 ^ 3 = 27\nh₃ : a 3 ^ 3 = 64\nh₄ : a 4 ^ 3 = 125\nh₅ : a 5 ^ 3 = 216\nh₆ : a 6 ^ 3 = 343\n⊢ ∑ k ∈ Finset.range 7, 6 * a k ^ 2 - 2 * ∑ k ∈ Finset.range 6, a k ^ 2 = 658"}
+{"statement_idx": 99, "goal_state": "n : ℕ\n⊢ ∑ k ∈ Finset.range n, k ^ 3 = (∑ k ∈ Finset.range n, k) ^ 2"}
+{"statement_idx": 100, "goal_state": "f : ℕ → ℕ → ℕ\ng : ℕ → ℕ\nh₀ : ∀ (y : ℕ), f 0 y = y + 1\nh₁ : ∀ (x : ℕ), f (x + 1) 0 = f x 1\nh₂ : ∀ (x y : ℕ), f (x + 1) (y + 1) = f x (f (x + 1) y)\nh₃ : g 0 = 2\nh₄ : ∀ (n : ℕ), g (n + 1) = 2 ^ g n\n⊢ f 4 1981 = g 1983 - 3"}
+{"statement_idx": 101, "goal_state": "y : ℝ\nh₀ : 0 ≤ 19 + 3 * y\nh₁ : √(19 + 3 * y) = 7\n⊢ y = 10"}
+{"statement_idx": 102, "goal_state": "x : ℕ\nh₀ : x < 100\nh₁ : x * 9 % 100 = 1\n⊢ x = 89"}
+{"statement_idx": 103, "goal_state": "p : ℕ\nh₀ : Nat.Prime p\nh₁ : 7 ≤ p\n⊢ ∑ k ∈ Finset.Icc 1 (p - 2), (↑k)⁻¹ * (↑k + 1)⁻¹ = 2"}
+{"statement_idx": 104, "goal_state": "m a : ℕ\nh₀ : 0 < m ∧ 0 < a\nh₁ : ↑m / ↑a = 3 / 4\n⊢ (84 * ↑m + 70 * ↑a) / (↑m + ↑a) = 76"}
+{"statement_idx": 105, "goal_state": "x : ℝ\nh₀ : 0 ≤ 3 - x\nh₁ : 0 ≤ x + 1\nh₂ : 1 / 2 < √(3 - x) - √(x + 1)\n⊢ -1 ≤ x ∧ x < 1 - √31 / 8"}
+{"statement_idx": 106, "goal_state": "S : Finset ℤ\nh₀ : ∀ (n : ℤ), n ∈ S ↔ |n - 2| ≤ 5 + 6 / 10\n⊢ S.card = 11"}
+{"statement_idx": 107, "goal_state": "x : ℝ\n⊢ (x + 3) * (2 * x - 6) = 2 * x ^ 2 - 18"}
+{"statement_idx": 108, "goal_state": "a b c d : ℝ\nh₁ : 4 ^ a = 5\nh₂ : 5 ^ b = 6\nh₃ : 6 ^ c = 7\nh₄ : 7 ^ d = 8\n⊢ a * b * c * d = 3 / 2"}
+{"statement_idx": 109, "goal_state": "a b : ℝ\nh₀ : 0 < a ∧ 0 < b\nh₁ : b ≤ a\n⊢ (a + b) / 2 - √(a * b) ≤ (a - b) ^ 2 / (8 * b)"}
+{"statement_idx": 110, "goal_state": "a b : ℤ\nh₀ : ∀ (x : ℝ), 10 * x ^ 2 - x - 24 = (↑a * x - 8) * (↑b * x + 3)\n⊢ a * b + b = 12"}
+{"statement_idx": 111, "goal_state": "⊢ (∑ k ∈ Finset.Icc 1 20, logb (5 ^ k) (3 ^ k ^ 2)) * ∑ k ∈ Finset.Icc 1 100, logb (9 ^ k) (25 ^ k) = 21000"}
+{"statement_idx": 112, "goal_state": "⊢ ∑ k ∈ Finset.Icc 2 10000, 1 / √↑k < 198"}
+{"statement_idx": 113, "goal_state": "n : ℕ\np : ℕ → ℕ\nh₀ : ∀ (x : ℕ), p x = x ^ 2 - x + 41\nh₁ : 1 < (p n).gcd (p (n + 1))\n⊢ 41 ≤ n"}
+{"statement_idx": 114, "goal_state": "S : Finset ℕ\nh₀ : ∀ (n : ℕ), n ∈ S ↔ 1000 ≤ n ∧ n ≤ 9999 ∧ (∀ d ∈ digits 10 n, Even d) ∧ 5 ∣ n\n⊢ S.card = 100"}
+{"statement_idx": 115, "goal_state": "n : ℕ\nh₀ : 9 ≤ n\n⊢ ∃ x, ↑x ^ 2 = (↑(n + 2)! - ↑(n + 1)!) / ↑n !"}
+{"statement_idx": 116, "goal_state": "k : ℕ\nh₀ : 0 < k\nh₁ : ∀ (n : ℕ), (6 * n + k).gcd (6 * n + 3) = 1\nh₂ : ∀ (n : ℕ), (6 * n + k).gcd (6 * n + 2) = 1\nh₃ : ∀ (n : ℕ), (6 * n + k).gcd (6 * n + 1) = 1\n⊢ 5 ≤ k"}
+{"statement_idx": 117, "goal_state": "⊢ ∃ a b, Irrational a ∧ Irrational b ∧ ¬Irrational (a ^ b)"}
+{"statement_idx": 118, "goal_state": "x y z : ℝ\nh₀ : 3 * x + y = 17\nh₁ : 5 * y + z = 14\nh₂ : 3 * x + 5 * z = 41\n⊢ x + y + z = 12"}
+{"statement_idx": 119, "goal_state": "f : ℤ → ℤ\nh₀ : ∀ (n : ℤ), Odd n → f n = n ^ 2\nh₁ : ∀ (n : ℤ), Even n → f n = n ^ 2 - 4 * n - 1\n⊢ f 4 = -1"}
+{"statement_idx": 120, "goal_state": "n : ℕ\nh₀ : 2 * n % 47 = 15\n⊢ n % 47 = 31"}
+{"statement_idx": 121, "goal_state": "x y z : ℝ\nh₀ : 0 < x ∧ 0 < y ∧ 0 < z\n⊢ 9 / (x + y + z) ≤ 2 / (x + y) + 2 / (y + z) + 2 / (z + x)"}
+{"statement_idx": 122, "goal_state": "b : ZMod (11 ^ 2)\nh₀ : b = 24⁻¹\n⊢ b = 116"}
+{"statement_idx": 123, "goal_state": "a b : ℝ\n⊢ |a + b| / (1 + |a + b|) ≤ |a| / (1 + |a|) + |b| / (1 + |b|)"}
+{"statement_idx": 124, "goal_state": "a b c d k m : ℕ\nh₀ : 0 < a ∧ 0 < b ∧ 0 < c ∧ 0 < d\nh₁ : Odd a ∧ Odd b ∧ Odd c ∧ Odd d\nh₂ : a < b ∧ b < c ∧ c < d\nh₃ : a * d = b * c\nh₄ : a + d = 2 ^ k\nh₅ : b + c = 2 ^ m\n⊢ a = 1"}
+{"statement_idx": 125, "goal_state": "a b c d : ℕ\nh₀ : 0 < a ∧ 0 < b ∧ 0 < c ∧ 0 < d\nh₁ : d < c\nh₂ : c < b\nh₃ : b < a\nh₄ : a * c + b * d = (b + d + a - c) * (b + d + c - a)\n⊢ ¬Nat.Prime (a * b + c * d)"}
+{"statement_idx": 126, "goal_state": "n : ZMod 1399\nh₁ : n = 160⁻¹\n⊢ n = 1058"}
+{"statement_idx": 127, "goal_state": "a : ℝ\nh₀ : √(4 + √(16 + 16 * a)) + √(1 + √(1 + a)) = 6\n⊢ a = 8"}
+{"statement_idx": 128, "goal_state": "n : ℝ\nh₀ : n = 1 / 3\n⊢ ⌊10 * n⌋ + ⌊100 * n⌋ + ⌊1000 * n⌋ + ⌊10000 * n⌋ = 3702"}
+{"statement_idx": 129, "goal_state": "a b : ℝ\nh₀ : a ^ 2 + b ^ 2 = 1\n⊢ a * b + (a - b) ≤ 1"}
+{"statement_idx": 130, "goal_state": "f : ℚ → ℝ\nh₀ : ∀ x > 0, ∀ y > 0, f (x * y) = f x + f y\nh₁ : ∀ (p : ℕ), Nat.Prime p → f ↑p = ↑p\n⊢ f (25 / 11) < 0"}
+{"statement_idx": 131, "goal_state": "x y : ℝ\nh₀ : 3 * y = x\nh₁ : 2 * x + 5 * y = 11\n⊢ x + y = 4"}
+{"statement_idx": 132, "goal_state": "p a : ℕ\nh₀ : 0 < a\nh₁ : Nat.Prime p\n⊢ p ∣ a ^ p - a"}
+{"statement_idx": 133, "goal_state": "⊢ ∏ k ∈ Finset.range 7, (2 ^ 2 ^ k + 3 ^ 2 ^ k) = 3 ^ 128 - 2 ^ 128"}
+{"statement_idx": 134, "goal_state": "u : ℕ → ℚ\nh₀ : ∀ (n : ℕ), u (n + 1) = u n + 1\nh₁ : ∑ k ∈ Finset.range 98, u k.succ = 137\n⊢ ∑ k ∈ Finset.range 49, u (2 * k.succ) = 93"}
+{"statement_idx": 135, "goal_state": "a b c : ℝ\nf : ℝ → ℝ\nh₀ : ∀ (x : ℝ), f x = x ^ 3 + a * x ^ 2 + b * x + c\nh₁ : f ⁻¹' {0} = {cos (2 * π / 7), cos (4 * π / 7), cos (6 * π / 7)}\n⊢ a * b * c = 1 / 32"}
+{"statement_idx": 136, "goal_state": "⊢ 5 ^ 30 % 7 = 1"}
+{"statement_idx": 137, "goal_state": "n : ℕ\nh₀ : 0 < n\nh₁ : n.gcd 40 = 10\nh₂ : n.lcm 40 = 280\n⊢ n = 70"}
+{"statement_idx": 138, "goal_state": "v i z : ℂ\nh₀ : v = i * z\nh₁ : v = 1 + Complex.I\nh₂ : z = 2 - Complex.I\n⊢ i = 1 / 5 + 3 / 5 * Complex.I"}
+{"statement_idx": 139, "goal_state": "n : ℕ\nh₀ : 0 < n\nh₁ : (1 / 2 + 1 / 3 + 1 / 7 + 1 / ↑n).den = 1\n⊢ n = 42"}
+{"statement_idx": 140, "goal_state": "n : ℕ\nh₀ : 0 < n\n⊢ ∃ m > n, ∃ p, m * p ≤ m + p"}
+{"statement_idx": 141, "goal_state": "S : Finset ℕ\nh₀ : ∀ (k : ℕ), k ∈ S ↔ 0 < k ∧ k * k ∣ ∏ i ∈ Finset.Icc 1 9, i !\n⊢ S.card = 672"}
+{"statement_idx": 142, "goal_state": "a : ℝ\nh₀ : a ≠ 0\nh₁ : 8⁻¹ / 4⁻¹ - a⁻¹ = 1\n⊢ a = -2"}
+{"statement_idx": 143, "goal_state": "z : ℂ\nh₀ : 12 * Complex.normSq z = 2 * Complex.normSq (z + 2) + Complex.normSq (z ^ 2 + 1) + 31\n⊢ z + 6 / z = -2"}
+{"statement_idx": 144, "goal_state": "⊢ Real.log 27 / Real.log 3 = 3"}
+{"statement_idx": 145, "goal_state": "⊢ 1529 % 6 = 5"}
+{"statement_idx": 146, "goal_state": "⊢ 91 ^ 2 = 8281"}
+{"statement_idx": 147, "goal_state": "d : ℕ → ℕ\nh₀ : d 0 = 0\nh₁ : d 1 = 0\nh₂ : d 2 = 1\nh₃ : ∀ n ≥ 3, d n = d (n - 1) + d (n - 3)\n⊢ Even (d 2021) ∧ Odd (d 2022) ∧ Even (d 2023)"}
+{"statement_idx": 148, "goal_state": "n : ℕ\n⊢ ↑n ^ (1 / ↑n) < 2 - 1 / ↑n"}
+{"statement_idx": 149, "goal_state": "a b c : ℝ\nh₀ : 0 < a ∧ 0 < b ∧ 0 < c\nh₁ : a * (b + c) = 152\nh₂ : b * (c + a) = 162\nh₃ : c * (a + b) = 170\n⊢ a * b * c = 720"}
+{"statement_idx": 150, "goal_state": "a b c : ℕ\nh₀ : a ≤ 9 ∧ b ≤ 9 ∧ c ≤ 9\nh₁ : digits 10 (5 ^ 100 % 1000) = [c, b, a]\n⊢ a + b + c = 13"}
+{"statement_idx": 151, "goal_state": "m n : ℕ\nh₀ : 0 < m ∧ 0 < n\nh₁ : m.gcd n = 8\nh₂ : m.lcm n = 112\n⊢ 72 ≤ m + n"}
+{"statement_idx": 152, "goal_state": "t : ℝ\n⊢ (2 ^ t - 3 * t) * t / 4 ^ t ≤ 1 / 12"}
+{"statement_idx": 153, "goal_state": "x : ℝ\n⊢ x ^ 2 - 14 * x + 3 ≥ 7 ^ 2 - 14 * 7 + 3"}
+{"statement_idx": 154, "goal_state": "S : Finset ℝ\nh₀ : ∀ (x : ℝ), x ∈ S ↔ 0 ≤ x ∧ x ≤ 2 * π ∧ tan (2 * x) = cos (x / 2)\n⊢ S.card = 5"}
+{"statement_idx": 155, "goal_state": "i m o : ℕ\nh₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i\nh₁ : i * m * o = 2001\n⊢ i + m + o ≤ 671"}
+{"statement_idx": 156, "goal_state": "S : Finset ℝ\nh₀ : ∀ (x : ℝ), x ∈ S ↔ 0 ≤ x ∧ x ≤ π ∧ sin (π / 2 * cos x) = cos (π / 2 * sin x)\n⊢ S.card = 2"}
+{"statement_idx": 157, "goal_state": "a b c d : ℝ\nh₀ : 0 < a ∧ 0 < b ∧ 0 < c ∧ 0 < d\n⊢ a ^ 2 / b + b ^ 2 / c + c ^ 2 / d + d ^ 2 / a ≥ a + b + c + d"}
+{"statement_idx": 158, "goal_state": "⊢ 16 ^ 17 * 17 ^ 18 * 18 ^ 19 % 10 = 8"}
+{"statement_idx": 159, "goal_state": "n : ℕ\nh₀ : n < 101\nh₁ : 101 ∣ 123456 - n\n⊢ n = 34"}
+{"statement_idx": 160, "goal_state": "x y : ℕ\nh₀ : 0 < x ∧ 0 < y\nh₁ : 5 * x = y\nh₂ : ↑x - 3 + (↑y - 3) = 30\n⊢ x = 6"}
+{"statement_idx": 161, "goal_state": "x : ℝ\nn : ℕ\nh₀ : -1 < x\nh₁ : 0 < n\n⊢ 1 + ↑n * x ≤ (1 + x) ^ n"}
+{"statement_idx": 162, "goal_state": "c : ℝ\nf : ℝ → ℝ\nh₀ : ∀ (x : ℝ), f x = c * x ^ 3 - 9 * x + 3\nh₁ : f 2 = 9\n⊢ c = 3"}
+{"statement_idx": 163, "goal_state": "x y : ℕ\nh₀ : x ≠ 1 ∧ y ≠ 1\nh₁ : Real.log ↑x / Real.log 2 = Real.log 16 / Real.log ↑y\nh₂ : x * y = 64\n⊢ (Real.log (↑x / ↑y) / Real.log 2) ^ 2 = 20"}
+{"statement_idx": 164, "goal_state": "n : ℕ\n⊢ 11 ∣ 10 ^ n - (-1) ^ n"}
+{"statement_idx": 165, "goal_state": "a : ℕ → NNReal\nn : ℕ\nh₀ : ∑ x ∈ Finset.range n, a x = ↑n\n⊢ ∏ x ∈ Finset.range n, a x ≤ 1"}
+{"statement_idx": 166, "goal_state": "f : ℕ → NNReal → ℝ\nh₀ : ∀ (x : NNReal), f 1 x = ↑x\nh₁ : ∀ (x : NNReal) (n : ℕ), f (n + 1) x = f n x * (f n x + 1 / ↑n)\n⊢ ∃! a, ∀ (n : ℕ), 0 < n → 0 < f n a ∧ f n a < f (n + 1) a ∧ f (n + 1) a < 1"}
+{"statement_idx": 167, "goal_state": "a b : ℂ\nh₀ : a ^ 3 - 8 = 0\nh₁ : b ^ 3 - 8 * b ^ 2 - 8 * b + 64 = 0\n⊢ ‖a - b‖ ≤ 2 * √21"}
+{"statement_idx": 168, "goal_state": "x y : ℝ\nh₀ : (x + y) / 2 = 7\nh₁ : √(x * y) = √19\n⊢ x ^ 2 + y ^ 2 = 158"}
+{"statement_idx": 169, "goal_state": "r : ℝ\nh₀ : r ^ (1 / 3) + 1 / r ^ (1 / 3) = 3\n⊢ r ^ 3 + 1 / r ^ 3 = 5778"}
+{"statement_idx": 170, "goal_state": "x : NNReal\n⊢ √(60 * ↑x) * √(12 * ↑x) * √(63 * ↑x) = 36 * ↑x * √(35 * ↑x)"}
+{"statement_idx": 171, "goal_state": "x : ℝ\nh₀ : 3 / 2 / 3 = x / 10\n⊢ x = 5"}
+{"statement_idx": 172, "goal_state": "⊢ (239 + 174 + 83) % 10 = 6"}
+{"statement_idx": 173, "goal_state": "p q : ℕ\nh₀ : Nat.Prime p ∧ Nat.Prime q\nh₁ : 4 ≤ p ∧ p ≤ 18\nh₂ : 4 ≤ q ∧ q ≤ 18\n⊢ p * q - (p + q) ≠ 194"}
+{"statement_idx": 174, "goal_state": "f : ℕ → ℕ → ℝ\nh₀ : ∀ (x : ℕ), 0 < x → f x x = ↑x\nh₁ : ∀ (x y : ℕ), 0 < x ∧ 0 < y → f x y = f y x\nh₂ : ∀ (x y : ℕ), 0 < x ∧ 0 < y → (↑x + ↑y) * f x y = ↑y * f x (x + y)\n⊢ f 14 52 = 364"}
+{"statement_idx": 175, "goal_state": "a : ℝ\nh₀ : a = 8\n⊢ (16 * (a ^ 2) ^ (1 / 3)) ^ (1 / 3) = 4"}
+{"statement_idx": 176, "goal_state": "f : ℤ → ℤ\n⊢ (∀ (a b : ℤ), f (2 * a) + 2 * f b = f (f (a + b))) ↔ ∀ (z : ℤ), f z = 0 ∨ ∃ c, ∀ (z : ℤ), f z = 2 * z + c"}
+{"statement_idx": 177, "goal_state": "a b : ℝ\nh₀ : 3 * a + 2 * b = 5\nh₁ : a + b = 2\n⊢ a = 1 ∧ b = 1"}
+{"statement_idx": 178, "goal_state": "f g : ℝ → ℝ\nh₀ : ∀ (x : ℝ), f x = x + 1\nh₁ : ∀ (x : ℝ), g x = x ^ 2 + 3\n⊢ f (g 2) = 8"}
+{"statement_idx": 179, "goal_state": "a d : ℝ\nh₀ : a + 6 * d = 30\nh₁ : a + 10 * d = 60\n⊢ a + 20 * d = 135"}
+{"statement_idx": 180, "goal_state": "f : ℤ → ℤ\nh₀ : ∀ (n : ℤ), 1000 ≤ n → f n = n - 3\nh₁ : ∀ n < 1000, f n = f (f (n + 5))\n⊢ f 84 = 997"}
+{"statement_idx": 181, "goal_state": "a b : ℝ\nf : ℝ → ℝ\nh₀ : ∀ (x : ℝ), f x = a * x ^ 4 - b * x ^ 2 + x + 5\nh₂ : f (-3) = 2\n⊢ f 3 = 8"}
+{"statement_idx": 182, "goal_state": "f : ℝ → ℝ\nh₀ : ∀ (x : ℝ), f x = x ^ 2 + (18 * x + 30) - 2 * √(x ^ 2 + (18 * x + 45))\nh₁ : Fintype ↑(f ⁻¹' {0})\n⊢ ∏ x ∈ (f ⁻¹' {0}).toFinset, x = 20"}
+{"statement_idx": 183, "goal_state": "n : ℕ\nh₀ : 0 < n\n⊢ (3 ^ 2 ^ n - 1) % 2 ^ (n + 3) = 2 ^ (n + 2)"}
+{"statement_idx": 184, "goal_state": "⊢ 1 * 3 ^ 3 + 2 * 3 ^ 2 + 2 * 3 + 2 = 53"}
+{"statement_idx": 185, "goal_state": "a b c d : ℕ\nh₀ : a * b * c * d = 8!\nh₁ : a * b + a + b = 524\nh₂ : b * c + b + c = 146\nh₃ : c * d + c + d = 104\n⊢ ↑a - ↑d = 10"}
+{"statement_idx": 186, "goal_state": "⊢ (∑ k ∈ Finset.Icc 1 12, k) % 4 = 2"}
+{"statement_idx": 187, "goal_state": "x : ℤ\nh₀ : x = 4\n⊢ (3 * x - 2) * (4 * x + 1) - (3 * x - 2) * (4 * x) + 1 = 11"}
+{"statement_idx": 188, "goal_state": "S : Finset ℝ\nh₀ : ∀ (x : ℝ), x ∈ S ↔ |2 - x| = 3\n⊢ ∑ k ∈ S, k = 4"}
+{"statement_idx": 189, "goal_state": "a d : ℝ\nh₀ : ∑ k ∈ Finset.range 5, (a + ↑k * d) = 70\nh₁ : ∑ k ∈ Finset.range 10, (a + ↑k * d) = 210\n⊢ a = 42 / 5"}
+{"statement_idx": 190, "goal_state": "⊢ 121 * 122 * 123 % 4 = 2"}
+{"statement_idx": 191, "goal_state": "x : ℝ\nn : ℕ\na : ℕ → ℝ\nh₁ : ∀ (m : ℕ), a (m + 1) - a m = a (m + 2) - a (m + 1)\nh₂ : a 1 = 2 * x - 3\nh₃ : a 2 = 5 * x - 11\nh₄ : a 3 = 3 * x + 1\nh₅ : a n = 2009\n⊢ n = 502"}
+{"statement_idx": 192, "goal_state": "f : ℝ → ℝ\nh₀ : ∀ (x : ℝ), x ≠ -2 → f x = 1 / (x + 2)\n⊢ f (f 1) = 3 / 7"}
+{"statement_idx": 193, "goal_state": "a b c d : ℝ\nf : ℂ → ℂ\nh₀ : ∀ (z : ℂ), f z = z ^ 6 - 10 * z ^ 5 + ↑a * z ^ 4 + ↑b * z ^ 3 + ↑c * z ^ 2 + ↑d * z + 16\nh₁ : ∀ (z : ℂ), f z = 0 → z.im = 0 ∧ 0 < z.re ∧ ↑⌊z.re⌋ = z.re\n⊢ b = -88"}
+{"statement_idx": 194, "goal_state": "a b : ℝ\nh₀ : a ^ 2 * b ^ 3 = 32 / 27\nh₁ : a / b ^ 3 = 27 / 4\n⊢ a + b = 8 / 3"}
+{"statement_idx": 195, "goal_state": "m n : ℕ\nh₀ : Even m\nh₁ : Even n\nh₂ : m - n = 2\nh₃ : m * n = 288\n⊢ m = 18"}
+{"statement_idx": 196, "goal_state": "a b : ℝ\nh₀ : 0 < a ∧ 0 < b\nh₁ : a ≠ b\nh₂ : |a - 1 / a| = 1\nh₃ : |b - 1 / b| = 1\n⊢ a + b = √5"}
+{"statement_idx": 197, "goal_state": "a b c : ℝ\nh₀ : 0 < a ∧ 0 < b ∧ 0 < c\nh₁ : c < a + b\nh₂ : b < a + c\nh₃ : a < b + c\n⊢ a ^ 2 * (b + c - a) + b ^ 2 * (c + a - b) + c ^ 2 * (a + b - c) ≤ 3 * a * b * c"}
+{"statement_idx": 198, "goal_state": "k t m n : ℕ\nh₀ : Nat.Prime m ∧ Nat.Prime n\nh₁ : t < k\nh₂ : k ^ 2 - m * k + n = 0\nh₃ : t ^ 2 - m * t + n = 0\n⊢ m ^ n + n ^ m + k ^ t + t ^ k = 20"}
+{"statement_idx": 199, "goal_state": "x y : ℕ\nh₀ : x + y = 17402\nh₁ : 10 ∣ x\nh₂ : x / 10 = y\n⊢ ↑x - ↑y = 14238"}
+{"statement_idx": 200, "goal_state": "a b : ℕ → ℝ\nh₀ : ∀ (n : ℕ), a (n + 1) = √3 * a n - b n\nh₁ : ∀ (n : ℕ), b (n + 1) = √3 * b n + a n\nh₂ : a 100 = 2\nh₃ : b 100 = 4\n⊢ a 1 + b 1 = 1 / 2 ^ 98"}
+{"statement_idx": 201, "goal_state": "a b c : ℝ\nh₀ : a ≤ b ∧ b ≤ c\nh₁ : a + b + c = 2\nh₂ : a * b + b * c + c * a = 1\n⊢ 0 ≤ a ∧ a ≤ 1 / 3 ∧ 1 / 3 ≤ b ∧ b ≤ 1 ∧ 1 ≤ c ∧ c ≤ 4 / 3"}
+{"statement_idx": 202, "goal_state": "⊢ 194 % 11 = 7"}
+{"statement_idx": 203, "goal_state": "S : Finset ℤ\nh₀ : ∀ (x : ℤ), x ∈ S ↔ ↑|x| < 3 * π\n⊢ S.card = 19"}
+{"statement_idx": 204, "goal_state": "a b : ℝ\nn : ℕ\nh₀ : 0 < a ∧ 0 < b\nh₁ : 0 < n\n⊢ ((a + b) / 2) ^ n ≤ (a ^ n + b ^ n) / 2"}
+{"statement_idx": 205, "goal_state": "a : ℝ\nf : ℝ → ℝ\nh₀ : 0 < a\nh₁ : ∀ (x : ℝ), f (x + a) = 1 / 2 + √(f x - f x ^ 2)\n⊢ ∃ b > 0, ∀ (x : ℝ), f (x + b) = f x"}
+{"statement_idx": 206, "goal_state": "a b x y : ℝ\nh₀ : a * x + b * y = 3\nh₁ : a * x ^ 2 + b * y ^ 2 = 7\nh₂ : a * x ^ 3 + b * y ^ 3 = 16\nh₃ : a * x ^ 4 + b * y ^ 4 = 42\n⊢ a * x ^ 5 + b * y ^ 5 = 20"}
+{"statement_idx": 207, "goal_state": "⊢ (29 * 79 + 31 * 81) % 10 = 2"}
+{"statement_idx": 208, "goal_state": "⊢ √(Real.log 6 / Real.log 2 + Real.log 6 / Real.log 3) = √(Real.log 3 / Real.log 2) + √(Real.log 2 / Real.log 3)"}
+{"statement_idx": 209, "goal_state": "S : Finset ℝ\nh₀ : ∀ (x : ℝ), x ∈ S ↔ 0 < x ∧ x ≤ 2 * π ∧ 1 - 3 * sin x + 5 * cos (3 * x) = 0\n⊢ S.card = 6"}
+{"statement_idx": 210, "goal_state": "a b : ℕ\nh₀ : 1 ≤ a ∧ a ≤ 9 ∧ b ≤ 9\nh₁ : (10 * a + b) ^ 3 = 912673\n⊢ a + b = 16"}
+{"statement_idx": 211, "goal_state": "a b : ℤ\nh₀ : Odd a\nh₁ : 4 ∣ b\nh₂ : b ≥ 0\n⊢ (a ^ 2 + b ^ 2) % 8 = 1"}
+{"statement_idx": 212, "goal_state": "b : ℕ\nh₀ : Nat.lcm 120 b = 3720\nh₁ : Nat.gcd 120 b = 8\n⊢ b = 248"}
+{"statement_idx": 213, "goal_state": "m : ℚ\nh₀ : 0 < m\nh₁ : ∑ k ∈ Finset.Icc 1 35, sin (5 * ↑k * π / 180) = tan (↑m * π / 180)\nh₂ : ↑m.num / ↑m.den < 90\n⊢ ↑m.den + m.num = 177"}
+{"statement_idx": 214, "goal_state": "y : ℝ\nh₀ : y + 6 + y = 2 * 12\n⊢ y = 9"}
+{"statement_idx": 215, "goal_state": "x y z : ℝ\na : ℕ → ℝ\nh₀ : 0 < a 0 ∧ 0 < a 4 ∧ 0 < a 8\nh₁ : a 1 < 0 ∧ a 2 < 0\nh₂ : a 3 < 0 ∧ a 5 < 0\nh₃ : a 6 < 0 ∧ a 7 < 0\nh₄ : 0 < a 0 + a 1 + a 2\nh₅ : 0 < a 3 + a 4 + a 5\nh₆ : 0 < a 6 + a 7 + a 8\nh₇ : a 0 * x + a 1 * y + a 2 * z = 0\nh₈ : a 3 * x + a 4 * y + a 5 * z = 0\nh₉ : a 6 * x + a 7 * y + a 8 * z = 0\n⊢ x = 0 ∧ y = 0 ∧ z = 0"}
+{"statement_idx": 216, "goal_state": "x y : ℝ\nn : NNReal\nh₀ : x < 0 ∧ y < 0\nh₁ : |y| = 6\nh₂ : √((x - 8) ^ 2 + (y - 3) ^ 2) = 15\nh₃ : √(x ^ 2 + y ^ 2) = √↑n\n⊢ n = 52"}
+{"statement_idx": 217, "goal_state": "⊢ (∑ k ∈ Finset.range 101, 2 ^ k) % 7 = 3"}
+{"statement_idx": 218, "goal_state": "n : ℕ\n⊢ ¬5 ∣ ∑ k ∈ Finset.range (n + 1), (2 * n + 1).choose (2 * k + 1) * 2 ^ (3 * k)"}
+{"statement_idx": 219, "goal_state": "x : ℝ\nm : ℚ\nh₀ : 1 / cos x + tan x = 22 / 7\nh₁ : 1 / sin x + 1 / tan x = ↑m\n⊢ ↑m.den + m.num = 44"}
+{"statement_idx": 220, "goal_state": "m n p q : ℝ\nh₀ : p = 2 ^ m\nh₁ : q = 3 ^ n\n⊢ p ^ (2 * n) * q ^ m = 12 ^ (m * n)"}
+{"statement_idx": 221, "goal_state": "a : ℕ\nh₀ : Even a\nh₁ : ↑(∑ k ∈ Finset.range 8, (2 * k + 1)) - ↑(∑ k ∈ Finset.range 5, (a + 2 * k)) = 4\n⊢ a = 8"}
+{"statement_idx": 222, "goal_state": "x : ℝ\nh₀ : |x - 1| + |x| + |x + 1| = x + 2\n⊢ 0 ≤ x ∧ x ≤ 1"}
+{"statement_idx": 223, "goal_state": "x : ℝ\nh₀ : 0 < x\nh₁ : x ^ 2 - 10 * x - 29 ≠ 0\nh₂ : x ^ 2 - 10 * x - 45 ≠ 0\nh₃ : x ^ 2 - 10 * x - 69 ≠ 0\nh₄ : 1 / (x ^ 2 - 10 * x - 29) + 1 / (x ^ 2 - 10 * x - 45) - 2 / (x ^ 2 - 10 * x - 69) = 0\n⊢ x = 13"}
+{"statement_idx": 224, "goal_state": "m n : ℕ\nh₀ : 1 < m\nh₁ : 1 < n\nh₂ : m * n = 2005\n⊢ m + n = 406"}
+{"statement_idx": 225, "goal_state": "n : ℕ\nh₀ : n = 11\n⊢ (1 / 4) ^ (n + 1) * 2 ^ (2 * n) = 1 / 4"}
+{"statement_idx": 226, "goal_state": "a : ℕ → NNReal\nh₀ : ∑ x ∈ Finset.range 100, a (x + 1) ^ 2 = 1\n⊢ ∑ x ∈ Finset.range 99, a (x + 1) ^ 2 * a (x + 2) + a 100 ^ 2 * a 1 < 12 / 25"}
+{"statement_idx": 227, "goal_state": "x y z : ℝ\nh₀ : 0 < x ∧ 0 < y ∧ 0 < z\nh₁ : x + 1 / y = 4\nh₂ : y + 1 / z = 1\nh₃ : z + 1 / x = 7 / 3\n⊢ x * y * z = 1"}
+{"statement_idx": 228, "goal_state": "⊢ (Complex.I / 2) ^ 2 = -(1 / 4)"}
+{"statement_idx": 229, "goal_state": "x p : ℝ\nf : ℝ → ℝ\nh₀ : 0 < p ∧ p < 15\nh₁ : p ≤ x ∧ x ≤ 15\nh₂ : f x = |x - p| + |x - 15| + |x - p - 15|\n⊢ 15 ≤ f x"}
+{"statement_idx": 230, "goal_state": "s : ℝ → ℝ → ℝ\nh₀ : ∀ (x y : ℝ), x ≠ 0 → y ≠ 0 → s x y = (1 / y - 1 / x) / (x - y)\n⊢ s 3 11 = 1 / 33"}
+{"statement_idx": 231, "goal_state": "N : ℕ\nf : ℕ → ℝ\nh₀ : ∀ (n : ℕ), 0 < n → f n = ↑n.divisors.card / ↑n ^ (1 / 3)\nh₁ : ∀ (n : ℕ), n ≠ N → 0 < n → f n < f N\n⊢ (digits 10 N).sum = 9"}
+{"statement_idx": 232, "goal_state": "a : ℚ\nS : Finset ℝ\nh₀ : ∀ (x : ℝ), x ∈ S ↔ ↑⌊x⌋ * (x - ↑⌊x⌋) = ↑a * x ^ 2\nh₁ : ∑ k ∈ S, k = 420\n⊢ ↑a.den + a.num = 929"}
+{"statement_idx": 233, "goal_state": "n : ℕ\nh₀ : ¬Nat.Prime (7 + 30 * n)\n⊢ 6 ≤ n"}
+{"statement_idx": 234, "goal_state": "a b c d e f g : ℝ\nh₀ : a + 4 * b + 9 * c + 16 * d + 25 * e + 36 * f + 49 * g = 1\nh₁ : 4 * a + 9 * b + 16 * c + 25 * d + 36 * e + 49 * f + 64 * g = 12\nh₂ : 9 * a + 16 * b + 25 * c + 36 * d + 49 * e + 64 * f + 81 * g = 123\n⊢ 16 * a + 25 * b + 36 * c + 49 * d + 64 * e + 81 * f + 100 * g = 334"}
+{"statement_idx": 235, "goal_state": "n : ℕ\nh₀ : 2 ≤ n\nh₁ : ∃ x, x ^ 3 = n\nh₂ : ∃ t, t ^ 4 = n\n⊢ 4096 ≤ n"}
+{"statement_idx": 236, "goal_state": "m b : ℝ\nh₀ : m * 7 + b = -1\nh₁ : m * -1 + b = 7\n⊢ m + b = 5"}
+{"statement_idx": 237, "goal_state": "a b : ℕ\nh₀ : 0 < a ∧ 0 < b\nh₁ : ∃ k > 0, 2 ^ k = (a + b ^ 2) * (b + a ^ 2)\n⊢ a = 1"}
+{"statement_idx": 238, "goal_state": "x : ℝ\nh₀ : 5 + 500 / 100 * 10 = 110 / 100 * x\n⊢ x = 50"}
+{"statement_idx": 239, "goal_state": "k m n : ℕ\nt : ℝ\nh₀ : 0 < k ∧ 0 < m ∧ 0 < n\nh₁ : m.gcd n = 1\nh₂ : (1 + sin t) * (1 + cos t) = 5 / 4\nh₃ : (1 - sin t) * (1 - cos t) = ↑m / ↑n - √↑k\n⊢ k + m + n = 27"}
+{"statement_idx": 240, "goal_state": "n : ℕ\nh₀ : n % 5 = 3\n⊢ 2 * n % 5 = 1"}
+{"statement_idx": 241, "goal_state": "x : ℝ\nh₀ : x ≠ 0\n⊢ 12 / (x * x) * (x ^ 4 / (14 * x)) * (35 / (3 * x)) = 10"}
+{"statement_idx": 242, "goal_state": "n : ℕ\nh₀ : 0 < n\nh₁ : 3 ∣ n\n⊢ (n + 4 + (n + 6) + (n + 8)) % 9 = 0"}
+{"statement_idx": 243, "goal_state": "a b c : ℝ\nh₀ : 3 * a + b + c = -3\nh₁ : a + 3 * b + c = 9\nh₂ : a + b + 3 * c = 19\n⊢ a * b * c = -56"}
