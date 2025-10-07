@@ -1,0 +1,3 @@
+I want to combine these three files and organize their contents in one .jsonl file. I want to store the contents in a large JSON object. The main JSON object has two tags: "experiment_setting" and "results". The "experiment_setting" copies the experiment setting stored in the generation and the validation files (which is the same across the two files) and has the same key set (e.g., "model", n_candidates", ...). The "results" stores a large dictionary whose key is the statement index (line index of the problem in the problem file) and whose value is a dictionary that stores the problem and the generated candidates.
+
+The dictionary that stores the problem and the generated candidates has two keys: "problem" and "candidates"
